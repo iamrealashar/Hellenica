@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Code Blink">
+
+    <!-- META TITLE & DESCRIPTION -->
+    <title>Hellenica</title>
+    <meta name="description" content="">
+
+    <!-- PRELOAD LOGO AND CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- CANONICAL LINK AND FAVICON -->
+    <link rel="canonical" href="">
+    <link rel="icon" href="./assets/logowhite.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="./assets/logo.png" alt=""></div>
+            <div class="menu-icon" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="drawer" id="drawer">
+            <a href="#home" class="navlinks">Home</a>
+            <a href="#features" class="navlinks">Features</a>
+            <a href="#services" class="navlinks">Services</a>
+            <a href="#about" class="navlinks">About</a>
+            <a href="#contact" class="navbutton">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- MAIN CONTENT START -->
+        <section id="home">
+            <div class="hometext">
+                <h1 class="heading">Hellenica</h1>
+            </div>
+            <img src="./assets/herobg.png" alt="Hero Bg" class="herobg">
+            <p class="mainpara">The Soul of Ancient Greece</p>
+            <div class="scroll">
+                <video autoplay muted loop playsinline>
+                    <source src="./assets/scroll-animation.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+        </section>
+        <!-- MAIN CONTENT END -->
+
+        <!-- OUR SERVICES SECTION -->
+        <section id="history">
+            <h2 class="heading">HISTORY</h2>
+
+            <div class="timeline-container">
+                <!-- Item 1 -->
+                <div class="timeline-item left">
+                    <div class="content">
+                        <img src="" alt="">
+                        <h3 class="boxheading">Airport Transfers</h3>
+                        <p class="boxpara">We are your Partner in Airport Transfer Services. Whether you are leaving or
+                            arriving, we deliver safe and comfortable travel in our advanced vehicles with our expert
+                            driver</p>
+                    </div>
+                    <div class="marker"></div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item right">
+                    <div class="marker"></div>
+                    <div class="content">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z" />
+                            </svg>
+                        </div>
+                        <h3 class="boxheading">Business Travel</h3>
+                        <p class="boxpara">Luxury transport solutions with WiFi, charging ports, and privacy screens for
+                            professionals on the move.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item left">
+                    <div class="content">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 1c-2.4 0-4.52 1.21-5.78 3.05.01-.01.01-.02.02-.03C9.84 4 9.42 4 9 4c-4.42 0-8 .5-8 4v10c0 .88.39 1.67 1 2.22V22c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22v-3.08c3.39-.49 6-3.39 6-6.92 0-3.87-3.13-7-7-7zM4.5 19c-.83 0-1.5-.67-1.5-1.5S3.67 16 4.5 16s1.5.67 1.5 1.5S5.33 19 4.5 19zM3 13V8h6c0 1.96.81 3.73 2.11 5H3zm10.5 6c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm2.5-6c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm.5-9H15v5l3.62 2.16.75-1.23-2.87-1.68z" />
+                            </svg>
+                        </div>
+                        <h3 class="boxheading">Group Transfers</h3>
+                        <p class="boxpara">Spacious executive vans and coaches with climate control for families,
+                            events, and corporate teams.</p>
+                    </div>
+                    <div class="marker" aria-hidden="true"></div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="timeline-item right">
+                    <div class="marker"></div>
+                    <div class="content">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z" />
+                                <circle cx="7.5" cy="14.5" r="1.5" />
+                                <circle cx="16.5" cy="14.5" r="1.5" />
+                            </svg>
+                        </div>
+                        <h3 class="boxheading">City-to-City Rides</h3>
+                        <p class="boxpara">Long-distance executive transfers with rest stops, bottled water, and premium
+                            comfort included.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- OUR SERVICES SECTION END-->
+
+        <!-- FEATURES SECTION -->
+        <section id="features">
+            <p class="subline">FEATURES</p>
+            <h2 class="heading">WHAT MAKES US EXCEPTIONAL</h2>
+            <div class="features-container">
+                <div class="feature-card">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64l0 11c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437l0 11c-17.7 0-32 14.3-32 32s14.3 32 32 32l32 0 256 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-11c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1l0-11c17.7 0 32-14.3 32-32s-14.3-32-32-32L320 0 64 0 32 0zM288 437l0 11L96 448l0-11c0-25.5 10.1-49.9 28.1-67.9L192 301.3l67.9 67.9c18 18 28.1 42.4 28.1 67.9z" />
+                    </svg>
+                    <h3 class="boxheading">Complimentary Waiting Time </h3>
+
+                    <p class="boxpara">Our 1-hour complimentary waiting time policy guarantees stress-free travel.
+                        Whether you have a
+                        delayed flight or need more time, we will help you out.</p>
+                </div>
+                <div class="feature-card">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path
+                            d="M64 32C28.7 32 0 60.7 0 96l0 32 576 0 0-32c0-35.3-28.7-64-64-64L64 32zM576 224L0 224 0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-192zM112 352l64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16z" />
+                    </svg>
+                    <h3 class="boxheading">Clear and Lowest Price</h3>
+
+                    <p class="boxpara">Receive immediate confirmation with a quick booking. Complete pricing with no
+                        hidden fees and
+                        cash
+                        requirements.</p>
+                </div>
+                <div class="feature-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M512 96c0 50.2-59.1 125.1-84.6 155c-3.8 4.4-9.4 6.1-14.5 5L320 256c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96 43 96 96s-43 96-96 96l-276.4 0c8.7-9.9 19.3-22.6 30-36.8c6.3-8.4 12.8-17.6 19-27.2L416 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0c-53 0-96-43-96-96s43-96 96-96l39.8 0c-21-31.5-39.8-67.7-39.8-96c0-53 43-96 96-96s96 43 96 96zM117.1 489.1c-3.8 4.3-7.2 8.1-10.1 11.3l-1.8 2-.2-.2c-6 4.6-14.6 4-20-1.8C59.8 473 0 402.5 0 352c0-53 43-96 96-96s96 43 96 96c0 30-21.1 67-43.5 97.9c-10.7 14.7-21.7 28-30.8 38.5l-.6 .7zM128 352a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM416 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64z" />
+                    </svg>
+                    <h3 class="boxheading">Easy online booking</h3>
+                    <p class="boxpara">Booking a taxi has never been this easy! Book your ride through our website via
+                        easy online taxi
+                        booking tool and let us take care of the rest.</p>
+                </div>
+                <div class="feature-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7l131.7 0c0 0 0 0 .1 0l5.5 0 112 0 5.5 0c0 0 0 0 .1 0l131.7 0c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2L224 304l-19.7 0c-12.4 0-20.1 13.6-13.7 24.2z" />
+                    </svg>
+
+                    <h3 class="boxheading">Professional Drivers</h3>
+                    <p class="boxpara">Ensure a secure and comfortable arrival at your destination, facilitated by a
+                        highly-qualified,
+                        insured, and licensed chauffeur.</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- OUR FEATURES SECTION END -->
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <p class="subline">ABOUT</p>
+            <h2 class="heading">Who We Are</h2>
+            <p class="mainpara"><a href="#home" class="hyperlink">Executive Serv</a> is your trusted partner for
+                Manchester Airport Transfers across the UK. With over 9 years of experience, we specialize in delivering
+                professional, reliable, and affordable airport taxi services. Whether you need an early morning pickup
+                or a late-night drop-off, our 24/7 service ensures a smooth, comfortable, and on-time journey. For a
+                seamless experience tailored to your travel needs, we recommend booking your Manchester Airport Transfer
+                at least three hours in advance. <a href="#contact" class="hyperlink">Contact us</a> today and
+                experience premium airport transfers with Executive Serv.</p>
+        </section>
+        <!-- ABOUT SECTION END-->
+
+
+
+
+
+
+
+        <!-- FLEET SECTION -->
+        <section id="fleet">
+            <p class="subline">FLEET</p>
+            <h2 class="heading">Select Your Ride</h2>
+            <div class="fleetcontainer">
+                <div class="fleet-card">
+                    <img src="./assets/saloonfleet.jpg" alt="Standard Saloon">
+                    <div class="fleettext">
+                        <h3 class="boxheading">Standard Saloon</h3>
+                        <p class="boxpara">Ideal for up to 4 passengers, the Standard Saloon comfortably fits 2 large
+                            and 2 small bags, and includes 1 baby seat for added convenience.</p>
+                    </div>
+                </div>
+                <div class="fleet-card">
+                    <img src="./assets/elitefleet.jpg" alt="Executive Sedan">
+                    <div class="fleettext">
+                        <h3 class="boxheading">Elite Sedan</h3>
+                        <p class="boxpara">The Elite Car accommodates 4 passengers, offers space for 2 large and 2 small
+                            bags, and includes 1 baby seat for a smooth, family-friendly ride.</p>
+                    </div>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="./assets/mpvfleet.jpg" alt="MPV">
+                    <div class="fleettext">
+                        <h3 class="boxheading">MPV</h3>
+                        <p class="boxpara">The MPV is perfect for up to 6 passengers, with ample room for 4 large and 2
+                            small bags, and includes 1 baby seat—ideal for group or family travel.</p>
+                    </div>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="./assets/luxuryvanfleet.jpg" alt="Luxury Van">
+                    <div class="fleettext">
+                        <h3 class="boxheading">Luxury Van</h3>
+                        <p class="boxpara">The Luxury Van offers seating for up to 7 passengers, with generous space for
+                            5 large and 3 small bags, plus 1 baby seat—designed for comfort, class, and convenience on
+                            every trip.</p>
+                    </div>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="./assets/minibusfleet.jpg" alt="Popular Car">
+                    <div class="fleettext">
+                        <h3 class="boxheading">MiniBus</h3>
+                        <p class="boxpara">Ideal for larger groups, the Minibus accommodates up to 8 passengers, carries
+                            6 large and 4 small bags, and includes 1 baby seat—perfect for airport runs, events, or
+                            family travel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FLEET SECTION END -->
+
+        <section id="testimonials">
+            <p class="subline">TESTIMONIALS</p>
+            <h2 class="heading">CUSTOMER VOICES</h2>
+            <div class="counters-container">
+                <div class="counter-box">
+                    <div class="counter" data-target="12500">0</div>
+                    <p class="boxpara">Trips Completed</p>
+                </div>
+                <div class="counter-box">
+                    <div class="counter" data-target="8500">0</div>
+                    <p class="boxpara">Happy Customers</p>
+                </div>
+                <div class="counter-box">
+                    <div class="counter" data-target="240">0</div>
+                    <p class="boxpara">Destinations</p>
+                </div>
+            </div>
+
+            <div class="testimonials-scroll-container">
+                <div class="testimonials-track">
+                    <!-- Original Testimonials -->
+                    <div class="testimonial-card">
+                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="boxpara">"Best service ever! Clean car, punctual driver."</p>
+                        <h4 class="testimonialsheading">Sarah Ali</h4>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="boxpara">"Professional and reliable airport transfer."</p>
+
+                        <h4 class="testimonialsheading">David Khan</h4>
+
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="boxpara">"Stress-free journey with a very polite driver."</p>
+
+                        <h4 class="testimonialsheading">Aisha Patel</h4>
+
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="boxpara">"The app makes booking so easy, and the drivers are always
+                            professional."</p>
+
+                        <h4 class="testimonialsheading">Michael Chen</h4>
+
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="boxpara">"I use this service every week - consistently excellent!"</p>
+
+                        <h4 class="testimonialsheading">Emma Wilson</h4>
+
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="boxpara">"Perfect for family trips with all the child seat options
+                            available."</p>
+                        <h4 class="testimonialsheading">James Brown</h4>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="boxpara">"The driver was friendly and helped with our luggage. Highly
+                            recommend!"</p>
+                        <h4 class="testimonialsheading">Olivia Smith</h4>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="boxpara">"Best service ever! Clean car, punctual driver."</p>
+                        <h4 class="testimonialsheading">Sarah Ali</h4>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="boxpara">"Professional and reliable airport transfer."</p>
+                        <h4 class="testimonialsheading">David Khan</h4>
+                    </div>
+
+                </div>
+        </section>
+
+
+        <!-- FAQ'S SECTION  -->
+        <section class="faqs-section">
+            <div class="faqs-container">
+                <div class="faqs-left">
+                    <p class="subline">FAQ'S</p>
+                    <h2 class="heading">Frequently Asked Questions</h2>
+                    <p class="mainpara">All your questions, answered in one place.</p>
+                </div>
+                <div class="faqs-right">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I book a ride?</span>
+                            <span class="faq-icon">&#43;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can easily book a ride online or through our mobile app in just a few clicks.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can I cancel or reschedule my booking?</span>
+                            <span class="faq-icon">&#43;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, you can cancel or reschedule anytime up to 24 hours before your ride with no fees.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Are your drivers licensed and trained?</span>
+                            <span class="faq-icon">&#43;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>All our drivers are licensed professionals with regular training and background checks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Are your drivers licensed and trained?</span>
+                            <span class="faq-icon">&#43;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>All our drivers are licensed professionals with regular training and background checks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Are your drivers licensed and trained?</span>
+                            <span class="faq-icon">&#43;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>All our drivers are licensed professionals with regular training and background checks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Are your drivers licensed and trained?</span>
+                            <span class="faq-icon">&#43;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>All our drivers are licensed professionals with regular training and background checks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Are your drivers licensed and trained?</span>
+                            <span class="faq-icon">&#43;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>All our drivers are licensed professionals with regular training and background checks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ'S SECTION END -->
+        <section id="contact">
+            <div class="container">
+                <main class="row">
+                    <section class="col left">
+                        <p class="subline">CONTACT</p>
+
+                        <div class="contactTitle">
+                            <h2 class="heading">Get In Touch</h2>
+                            <p>If you need any extra assistance, please contact us anytime. Thank you for selecting our
+                                airport transfer service!</p>
+                        </div>
+                        <div class="contactInfo">
+                            <a href="tel:+44 333 577 3757" rel="noopener noreferrer" target="_blank">
+                                <div class="icon">
+                                    <svg width="24px" fill="#FF9D00" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512">
+                                        <path
+                                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                                    </svg>
+                                </div>
+                                <div class="details">
+                                    <span class="headingspan">Phone</span>
+                                    <span>+44 333 577 3757</span>
+                                </div>
+                            </a>
+                            <a href="mailto:info@iconictravel.co.uk" rel="noopener noreferrer" target="_blank">
+                                <div class="icon">
+                                    <svg width="24px" fill="#FF9D00" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512">
+                                        <path
+                                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                    </svg>
+                                </div>
+                                <div class="details">
+                                    <span class="headingspan">Email</span>
+                                    <span>info@iconictravel.co.uk</span>
+                                </div>
+                            </a>
+                            <a href="https://g.co/kgs/v3614my" rel="noopener noreferrer" target="_blank">
+                                <div class="icon">
+                                    <svg width="20px" fill="#FF9D00" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 384 512">
+                                        <path
+                                            d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                                    </svg>
+                                </div>
+                                <div class="details">
+                                    <span class="headingspan">Location</span>
+                                    <span>9 Leaton Ave, Wythenshawe, Manchester M23 1HL, United Kingdom</span>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/message/HA3IBUDLH4HUO1" rel="noopener noreferrer" target="_blank">
+                                <div class="icon">
+                                    <svg width="24px" fill="#FF9D00" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512">
+                                        <path
+                                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                                    </svg>
+                                </div>
+                                <div class="details">
+                                    <span class="headingspan">Whatsapp</span>
+                                    <span>+44 777 100 5757</span>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="col right">
+
+                        <!--  *******   Form Starts   *******  -->
+
+                        <form class="messageForm" method="post" action="" name="contact-form">
+
+                            <div class="inputGroup halfWidth">
+                                <input type="text" id="Name" name="Name" required="required" autocomplete="off">
+                                <label for="Name">Your Name</label>
+                            </div>
+
+                            <div class="inputGroup halfWidth">
+                                <input type="Email" id="Email" name="Email" required="required" autocomplete="off">
+                                <label for="Email">Email</label>
+                            </div>
+
+                            <div class="inputGroup fullWidth">
+                                <input type="text" id="Subject" name="Subject" required="required" autocomplete="off">
+                                <label for="Subject">Subject</label>
+                            </div>
+
+                            <div class="inputGroup fullWidth">
+                                <textarea name="Message" id="Message" required="required"></textarea>
+                                <label for="Message">Your Message</label>
+                            </div>
+
+                            <div class="inputGroup fullWidth">
+                                <button type="submit" value="Submit" id="submit">Send Message</button>
+                            </div>
+
+                        </form>
+
+                        <!--  *******   Form Ends   *******  -->
+                    </section>
+        </section>
+    </main>
+    </div>
+    </main>
+    <!-- FOOTER START -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- Logo + Subline -->
+            <div class="footerlogo">
+                <a href="/">EXECUTIVE <span class="logospan">SERV</span></a>
+            </div>
+            <div class="policy-links">
+                <a href="./privacy">Privacy Policy</a>
+                <a href="./terms">Terms</a>
+            </div>
+        </div>
+
+        <div class="bottomrow">
+            <p>&copy; 2025 Executive Serv. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FOOTER END -->
+
+    <!-- JS  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> -->
+    <script src="./script.js" defer></script>
+    <script src="./gsap.js"></script>
+</body>
+
+</html>
