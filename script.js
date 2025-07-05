@@ -63,3 +63,21 @@ function scrollToWithFixedOffset(element) {
     behavior: 'smooth'
   });
 }
+
+
+const thumb = document.getElementById("scrollbar-thumb");
+
+function updateScrollProgress() {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+
+  thumb.style.height = `${scrollPercent}%`;
+}
+
+// If you're using Lenis
+if (window.lenis) {
+  lenis.on("scroll", updateScrollProgress);
+} else {
+  window.addEventListener("scroll", updateScrollProgress);
+}

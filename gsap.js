@@ -9,6 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: 1.5,
       ease: "power2.inOut",
     })
+    .to(".overlay", {
+      zIndex: -1,
+      duration: 0.5,
+    })
+    .from("#scrollbar-track" , {
+      duration: 1,
+      opacity: 0,
+      right: "-100%",
+    }, "first")
+
   .from('header', {
     duration: 1,
     opacity: 0,
@@ -89,5 +99,20 @@ cards.forEach((card) => {
 });
 
 
+ScrollTrigger.create({
+  start: 100, // when scroll reaches 100px
+  onEnter: () => {
+    gsap.to(".scroll", {
+      autoAlpha: 0, // hides with opacity + visibility
+      duration: 0.5,
+    });
+  },
+  onLeaveBack: () => {
+    gsap.to(".scroll", {
+      autoAlpha: 1, // shows when scroll returns to top
+      duration: 0.5,
+    });
+  }
+});
 
 });
