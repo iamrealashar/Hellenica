@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
   let intro = gsap.timeline({});
 
   intro.to(".bar", {
@@ -38,5 +40,54 @@ document.addEventListener("DOMContentLoaded", () => {
       opacity: 0,
       y: "100vh",
       ease: 'power2.out',
-    }, "first")
+    }, "first");
+
+
+
+
+
+const cards = [
+    {id: '#chapter1', endTranslateX: -2500, rotate: 45,},
+    {id: '#chapter2', endTranslateX: -2500, rotate: -30, },
+    {id: '#chapter3', endTranslateX: -2500, rotate: 45, },
+    {id: '#chapter4', endTranslateX: -2500, rotate: -30, },
+    {id: '#chapter5', endTranslateX: -2500, rotate: 45, },
+    {id: '#chapter6', endTranslateX: -2500, rotate: -30,},
+]
+
+
+ScrollTrigger.create({
+  trigger: "#history",
+  start: "top top",
+  end: "bottom",
+  pin: true,
+  scrub: 1,
+  onUpdate: (self) => {
+    gsap.to("#history", {
+      x:`${-390 * self.progress}vw`,
+      duration: 2.5,
+      ease: "power3.out",
+      });
+},
+});
+
+cards.forEach((card) => {
+  ScrollTrigger.create({
+    trigger: "card.id",
+    start:"top top",
+    end: "bottom",
+    scrub: 1,
+    onUpdate: (self) => {
+      gsap.to(card.id, {
+        x: `${card.endTranslateX * self.progress}px`,
+        rotate: `${card.rotate * self.progress * 2}`,
+        duration: 0.5,
+        ease: "power3.out",
+      });
+    },
+  });
+});
+
+
+
 });
