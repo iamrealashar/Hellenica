@@ -3,27 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hellenica History Timeline</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <title>Greek History Section</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --orange: #fe6716;
-      --textcolor: #fff;
-      --bgcolor: #0a0a0a;
-      --para: #bbb;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background: var(--bgcolor);
-      color: var(--textcolor);
+      background: #111;
+      color: #fff;
     }
 
+    section {
+      min-height: 100vh;
+    }
 
+    .history-section {
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1613216485107-d6f902db16a3?auto=format&fit=crop&w=1950&q=80'); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      opacity: 0;
+      transform: scale(0.96);
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: 1;
+    }
+
+    .history-content {
+      position: relative;
+      z-index: 2;
+      max-width: 850px;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .history-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      color: #ffb347;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+
+    .history-subtitle {
+      font-size: 1.2rem;
+      color: #ddd;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .history-title {
+        font-size: 2.2rem;
+      }
+
+      .history-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+    }
+
+    /* Just to make the scroll effect obvious */
+    .spacer {
+      height: 100vh;
+      background: #000;
+    }
   </style>
 </head>
 <body>
+
+  <div class="spacer"></div> <!-- Top scroll space -->
+
+  <section class="history-section" id="history">
+    <div class="overlay"></div>
+    <div class="history-content">
+      <h2 class="history-title">Legacy of Ancient Greece</h2>
+      <p class="history-subtitle">
+        From the majestic temples of Athens to the philosophies of Plato and Aristotle, Ancient Greece shaped the foundations of Western thought, democracy, and culture. Its legacy endures through art, science, architecture, and governance—a civilization whose light still guides the modern world.
+      </p>
+    </div>
+  </section>
+
+  <div class="spacer"></div> <!-- Bottom scroll space -->
 
   <!-- GSAP Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -31,19 +104,32 @@
   <script>
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.utils.toArray(".timeline-item .content").forEach((box) => {
-      gsap.to(box, {
-        scrollTrigger: {
-          trigger: box,
-          start: "top 80%",
-          toggleActions: "play none none reverse"
-        },
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power2.out"
-      });
+    // Fade + scale entire section
+    gsap.to(".history-section", {
+      scrollTrigger: {
+        trigger: "#history",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse"
+      },
+      opacity: 1,
+      scale: 1,
+      duration: 1.4,
+      ease: "power2.out"
+    });
+
+    // Slide up content
+    gsap.from(".history-content", {
+      scrollTrigger: {
+        trigger: ".history-section",
+        start: "top 85%",
+      },
+      y: 40,
+      opacity: 0,
+      duration: 1.3,
+      ease: "power3.out"
     });
   </script>
+
 </body>
 </html>
