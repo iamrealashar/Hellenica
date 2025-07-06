@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+    --textcolor: #000000;
+    --orange: #fe6716;
+    --bg: aliceblue;
+    --grey: #191919;
+    --para: #000000;
+}
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  color: #ff9d00;
+  font-size: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1111;
+    display: flex;
+}
+.bar{
+    width: 10vw;
+    height: 105vh;
+    background: var(--para);
+}
