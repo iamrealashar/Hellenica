@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: 1.5,
       ease: "power2.inOut",
     }, "intro")
+    .to("#cursor", {
+      display: "block",
+      duration: 1.5,
+      ease: "power2.inOut",
+    })
+
     .from('#home img', {
       duration: 1.5,
       delay: 0.5,
@@ -62,7 +68,6 @@ const cards = [
     {id: '#chapter3', endTranslateX: -2500, rotate: 45, },
     {id: '#chapter4', endTranslateX: -2500, rotate: -30, },
     {id: '#chapter5', endTranslateX: -2500, rotate: 45, },
-    {id: '#chapter6', endTranslateX: -2500, rotate: -30,},
 ]
 
 
@@ -74,7 +79,7 @@ ScrollTrigger.create({
   scrub: 1,
   onUpdate: (self) => {
     gsap.to("#history", {
-      x:`${-390 * self.progress}vw`,
+      x:`${-190 * self.progress}vw`,
       duration: 2.5,
       ease: "power4.out",
       });
@@ -91,7 +96,7 @@ cards.forEach((card) => {
       gsap.to(card.id, {
         x: `${card.endTranslateX * self.progress}px`,
         rotate: `${card.rotate * self.progress * 2}`,
-        duration: 0.5,
+        duration: 3.5,
         ease: "power3.out",
       });
     },

@@ -81,3 +81,70 @@ if (window.lenis) {
 } else {
   window.addEventListener("scroll", updateScrollProgress);
 }
+
+
+
+
+
+const cursor = document.querySelector('.custom-cursor');
+  const cursorText = cursor.querySelector('.cursor-text');
+  const cursorClick = cursor.querySelector('.cursor-click');
+
+  // Move cursor with GSAP
+  window.addEventListener('mouseenter', () => {
+    gsap.to(cursor, {
+      opacity: 1,
+      scale: 1,
+      duration: 0.5,
+      ease: 'power2.out'
+    });
+  });
+  window.addEventListener('mouseleave', () => {
+    gsap.to(cursor, {
+      opacity: 0,
+      scale: 0,
+      duration: 0.5,
+      ease: 'power2.out'
+    });
+  });
+
+
+
+
+  window.addEventListener('mousemove', (e) => {
+    gsap.to(cursor, {
+      x: e.clientX,
+      y: e.clientY,
+      duration: 0.2,
+      ease: 'power2.out'
+    });
+  });
+
+  // Click animation
+  window.addEventListener('mousedown', () => {
+    gsap.fromTo(cursorClick, 
+      { scale: 1, opacity: 0.5 }, 
+      { scale: 2, opacity: 0, duration: 0.5, ease: 'power2.out' }
+    );
+  });
+
+  // Dynamic section text
+  const historySection = document.querySelector('#history');
+  if (historySection) {
+    historySection.addEventListener('mouseenter', () => {
+      cursor.classList.add('active');
+      cursorText.textContent = 'Explore';
+    });
+
+    historySection.addEventListener('mouseleave', () => {
+      cursor.classList.remove('active');
+      cursorText.textContent = '';
+    });
+  }
+
+  // You can add more triggers like this
+  // const gallerySection = document.querySelector('.gallery');
+  // gallerySection.addEventListener('mouseenter', () => {
+  //   cursor.classList.add('active');
+  //   cursorText.textContent = 'View';
+  // });
