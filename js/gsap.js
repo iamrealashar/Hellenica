@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
       scale: 0.5,
       ease: 'power2.out'
     }, "intro")
-    .to(".overlay", {
+    .to(".webintro", {
       zIndex: -1,
       duration: 0.5,
     })
     .from("#scrollbar-track" , {
-      duration: 1,
+      duration: 1.5,
       opacity: 0,
       right: "-100%",
     }, "first")
@@ -76,7 +76,7 @@ ScrollTrigger.create({
     gsap.to("#history", {
       x:`${-390 * self.progress}vw`,
       duration: 2.5,
-      ease: "power3.out",
+      ease: "power4.out",
       });
 },
 });
@@ -100,16 +100,16 @@ cards.forEach((card) => {
 
 
 ScrollTrigger.create({
-  start: 100, // when scroll reaches 100px
+  start: 100,
   onEnter: () => {
     gsap.to(".scroll", {
-      autoAlpha: 0, // hides with opacity + visibility
+      autoAlpha: 0,
       duration: 0.5,
     });
   },
   onLeaveBack: () => {
     gsap.to(".scroll", {
-      autoAlpha: 1, // shows when scroll returns to top
+      autoAlpha: 1,
       duration: 0.5,
     });
   }

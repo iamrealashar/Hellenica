@@ -160,7 +160,7 @@ nav {
 .headingspan {
     color: var(--orange);
 }
-.overlay{
+.webintro{
     position: fixed;
     width: 100vw;
     height: 100vh;
