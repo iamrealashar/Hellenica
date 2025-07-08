@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: 'power2.out'
     }, "intro")
     .to(".webintro", {
-      zIndex: -1,
-      duration: 0.5,
-    })
+      display: "none",
+      duration: 0.2,
+    }, "first")
     .from("#scrollbar-track" , {
       duration: 1.5,
       opacity: 0,
