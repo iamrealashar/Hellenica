@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, "intro")
     .to("#cursor", {
       display: "block",
-      duration: 1.5,
+      duration: 0.5,
       ease: "power2.inOut",
     })
 
